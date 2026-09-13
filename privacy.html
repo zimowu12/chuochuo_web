@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>戳戳！隐私政策 · Record Everything Privacy Policy</title>
+<title>Record Everything · Privacy Policy / 戳戳！隐私政策</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -35,10 +35,142 @@
   a { color: #A2543F; }
   .divider { border: 0; border-top: 2px solid #D9D3C8; margin: 4rem 0 3rem; }
   footer { margin-top: 3rem; color: #857E74; font-size: .875rem; }
+  .lang-note { text-align: center; color: #8A837A; font-size: .8rem; margin: 0 0 1.5rem; }
 </style>
 </head>
 <body>
 <main>
+
+<p class="lang-note">English · 简体中文 · 繁體中文</p>
+
+<header>
+  <h1>Record Everything — Privacy Policy</h1>
+  <p class="meta">Effective: September 5th, 2026 · Last updated: September 9th, 2026</p>
+</header>
+
+<p class="lede"><strong>Record Everything is a local-first journalling app.</strong> Without an account, nothing you record ever leaves your device. Cloud sync is optional and only starts once you create an account.</p>
+<p>This page covers what information we collect and how it's used. What the app provides and what you agree to is covered in the <a href="agreement.html">Terms of Use</a>.</p>
+
+<h2>1. What we collect</h2>
+
+<h3>1.1 Without an account</h3>
+<p>Nothing. Your stamps, notes, journal titles, paper styles and coins stay on your device. We neither know who you are nor see what you record.</p>
+
+<h3>1.2 With an account and sync enabled</h3>
+<table>
+  <tr><th>Category</th><th>What it covers</th><th>Why</th></tr>
+  <tr>
+    <td>Account data</td>
+    <td>Email address and encrypted password credentials</td>
+    <td>Signing in and password recovery</td>
+  </tr>
+  <tr>
+    <td>Your records</td>
+    <td>Stamps and their timestamps, notes, journals and pages, custom papers and palettes, cover stickers, coin history, avatar</td>
+    <td>So you can continue on a new or second device</td>
+  </tr>
+  <tr>
+    <td>Health-related records within them</td>
+    <td>Period, medication, vitamin and exercise stamps, plus the cycle estimates derived from them</td>
+    <td>Same as above. Listed separately so you know they are part of what syncs</td>
+  </tr>
+</table>
+<p>This data is stored in a database provided by Supabase with row-level security enabled: <strong>at the database level, an account can only read and write its own row</strong>. That is enforced by the database, not merely promised.</p>
+
+<h3>1.3 Usage analytics</h3>
+<p>To understand what isn't working, the app records usage and uploads it periodically:</p>
+<ul>
+  <li>Which screens were opened, which stamps were used, what was purchased in the shop, current coin balance</li>
+  <li>A randomly generated anonymous device identifier, app version, OS version, device model, language</li>
+  <li>Once signed in, an account identifier used to recognise that a phone and a tablet belong to the same person. It is salted and hashed before being stored</li>
+</ul>
+<div class="note">
+  <p><strong>None of your writing is included.</strong> Not a single word of your notes, journal titles or page content. Your email address is not included either.</p>
+  <p><strong>Health and fitness stamps are not reported by name.</strong> Placing a "period" or "medication" stamp appears in analytics only as a generic label meaning "a health-category stamp was used". Which stamp it was never leaves your device.</p>
+</div>
+<p><strong>You can turn this off at any time</strong> in Me → Preferences → Usage analytics. Nothing is collected after that, and anything not yet uploaded is deleted. Turning it off does not affect any feature of the app.</p>
+<p>Analytics logs are retained for <strong>90 days</strong> and then deleted automatically.</p>
+
+<h2>2. What allows us to process this</h2>
+<p>Different information rests on different grounds. This is here so you can see where you have a choice:</p>
+<table>
+  <tr><th>Information</th><th>Ground</th><th>Your choice</th></tr>
+  <tr><td>Account details (email, password credential)</td><td>Performing our agreement with you — accounts and sync are impossible without it</td><td>Don't create an account; the app works fully without one</td></tr>
+  <tr><td>Your records (the synced ones)</td><td>Your consent, given by turning sync on, and performance of our agreement</td><td>Stay signed out and no cloud data exists; sign out or delete your account at any time</td></tr>
+  <tr><td>Health records among them</td><td><strong>Your explicit consent</strong> — see the next section</td><td>Don't use those stamps; or stay signed out and they never leave the device</td></tr>
+  <tr><td>Usage analytics</td><td>Our legitimate interest in improving the app, with an opt-out provided</td><td><strong>Turn it off in Me → Preferences</strong></td></tr>
+  <tr><td>Membership status</td><td>Performing our agreement — it decides whether member features are unlocked</td><td>Don't subscribe. We never touch payment details, see below</td></tr>
+</table>
+<p>If you are in the EEA or UK, the grounds above map to Article 6 GDPR (health records additionally to Article 9). If you are in Canada, we process on a consent basis under PIPEDA.</p>
+
+<h2>3. Health records</h2>
+<p>Period, medication, vitamin and exercise stamps — and the cycle estimates derived from them — are <strong>health information</strong>. Most jurisdictions treat this as a category needing stronger protection (GDPR calls it "special category data"). So, stated separately:</p>
+<ul>
+  <li><strong>Without an account it never leaves your device.</strong> That is the strongest protection available, and it is the default.</li>
+  <li>With sync on, they upload like any other record and are covered by the same row-level security. <strong>Turning sync on is how you consent to this processing.</strong> If you'd rather not, don't sign in — or delete your account at any time.</li>
+  <li><strong>Analytics never carries their names.</strong> Placing one of these stamps appears only as a generic "a health-category stamp was used"; which one it was never leaves your device.</li>
+  <li>We don't use them for inference, profiling, recommendations or advertising, and we don't share them with anyone.</li>
+</ul>
+
+<h2>4. What we don't do</h2>
+<ul>
+  <li><strong>No advertising tracking.</strong> Your data is never combined with third-party data to target ads across apps or websites.</li>
+  <li><strong>We don't sell or trade your personal information.</strong></li>
+  <li><strong>We don't use your records to train models, generate recommendations, or for anything unrelated to sync.</strong></li>
+  <li><strong>We never touch your payment details.</strong> Membership subscriptions are billed by the App Store. Payment methods and card numbers stay with Apple — we never see them and never receive them. The app reads exactly one thing from the system: whether this Apple ID currently has an active subscription.</li>
+</ul>
+
+<h2>5. Who we share with</h2>
+<p>We don't share your information with anyone other than the service providers below, who process data solely on our instructions:</p>
+<table>
+  <tr><th>Provider</th><th>What they handle</th></tr>
+  <tr><td>Supabase</td><td>Storage of account and sync data</td></tr>
+  <tr><td>Brevo</td><td>Sending verification and confirmation emails</td></tr>
+  <tr><td>Cloudflare</td><td>Receiving and storing usage analytics</td></tr>
+</table>
+<p>We may also disclose information where required by law or where necessary to protect the safety of our users or the public.</p>
+
+<h2>6. Where data lives and how long we keep it</h2>
+<ul>
+  <li><strong>Account and sync data</strong>: in a Supabase database in ap-northeast-1, for as long as your account exists.</li>
+  <li><strong>After you delete your account</strong>: live data goes immediately; our provider's rolling backups may hold it for up to 30 more days before being overwritten in the normal backup rotation. It is not accessed or used for anything during that window.</li>
+  <li><strong>Usage analytics</strong>: deleted automatically after 90 days. Anything not yet uploaded is deleted the moment you turn analytics off in the app.</li>
+  <li><strong>Local data</strong>: stays on your device until you delete it or uninstall the app. Uninstalling removes the local copy; the cloud copy remains unless you delete your account.</li>
+</ul>
+
+<h2>7. Your rights</h2>
+<ul>
+  <li><strong>Opt out entirely</strong>: use the app without an account; no cloud data is created.</li>
+  <li><strong>Access and export</strong>: Me → Export data packages everything on this device.</li>
+  <li><strong>Correction</strong>: edit or delete any record in the app; the cloud copy updates on the next sync.</li>
+  <li><strong>Delete your account</strong>: Me → Account → Delete account. Both the cloud copy and <strong>the records on this device are permanently deleted</strong>. If you only want to switch accounts, use Sign out instead.</li>
+  <li><strong>Portability</strong>: Export data produces structured, machine-readable files you can keep or move elsewhere.</li>
+  <li><strong>Object and restrict</strong>: you can object to processing based on legitimate interest — mainly usage analytics, which you can switch off right in the app — and ask us to restrict processing while a dispute is resolved.</li>
+  <li><strong>Withdraw consent</strong>: at any time, by turning analytics off, signing out, or deleting your account. Withdrawal doesn't affect the lawfulness of processing already carried out.</li>
+  <li><strong>Other requests</strong>: to ask what we hold about you, or to request correction, deletion or restriction, email us at the address below. We'll respond within 30 days.</li>
+</ul>
+<p><strong>If you think we've got it wrong</strong>, tell me first and I'll take it seriously. You also have the right to complain directly: in Canada to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>; in the EEA or UK to your national data protection authority.</p>
+
+<h2>8. Security</h2>
+<p>Data is encrypted in transit with HTTPS. Access to account data is constrained by database row-level security. Passwords are stored irreversibly by the authentication service; we cannot see your plaintext password. No method of transmission or storage is completely secure.</p>
+
+<h2>9. Children</h2>
+<p>Record Everything is not directed at children under 13, and we do not knowingly collect their personal information. If you believe we have, please contact us and we will delete it promptly.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, we'll update the date at the top of this page. For material changes to what we collect or why, we'll say so prominently in the app.</p>
+
+<h2>11. Contact</h2>
+<p>The controller of the personal information described in this policy is:</p>
+<ul>
+  <li><strong>Zimo Wu</strong>, Burnaby, British Columbia, Canada</li>
+  <li>Email: <a href="mailto:zimo_2000@icloud.com">zimo_2000@icloud.com</a></li>
+</ul>
+<p>Any question about privacy, or to exercise any of the rights above, just email me. There is no separate data protection officer — this is a one-person app, and the mail comes straight to me.</p>
+
+<footer>戳戳！／ Record Everything</footer>
+
+<hr class="divider">
 
 <header>
   <h1>戳戳！隐私政策</h1>
@@ -169,131 +301,130 @@
 <hr class="divider">
 
 <header>
-  <h1>Record Everything — Privacy Policy</h1>
-  <p class="meta">Effective: September 5th, 2026 · Last updated: September 9th, 2026</p>
+  <h1>戳戳！隱私權政策</h1>
+  <p class="meta">生效日期：2026年9月5日 · 最近更新：2026年9月9日</p>
 </header>
 
-<p class="lede"><strong>Record Everything is a local-first journalling app.</strong> Without an account, nothing you record ever leaves your device. Cloud sync is optional and only starts once you create an account.</p>
-<p>This page covers what information we collect and how it's used. What the app provides and what you agree to is covered in the <a href="agreement.html">Terms of Use</a>.</p>
+<p class="lede"><strong>戳戳！是一個本地優先的記錄應用。</strong>不登入帳號的話，你記的任何東西都不會離開這臺裝置。雲端同步是可選的，只有你自己開了帳號才會啟用。</p>
+<p>這一份講「我們拿了你哪些資訊、怎麼用」。「這個應用給你什麼、你不能做什麼」是另一份，見<a href="agreement.html">使用條款</a>。</p>
 
-<h2>1. What we collect</h2>
+<h2>一、我們收集什麼</h2>
 
-<h3>1.1 Without an account</h3>
-<p>Nothing. Your stamps, notes, journal titles, paper styles and coins stay on your device. We neither know who you are nor see what you record.</p>
+<h3>1. 不登入的情況</h3>
+<p>不收集任何個人資訊。印記、備註、日記名字、紙樣、鷗幣，全部只存在你的裝置上。這種情況下我們既不知道你是誰，也看不到你記了什麼。</p>
 
-<h3>1.2 With an account and sync enabled</h3>
+<h3>2. 註冊帳號並開啟同步之後</h3>
 <table>
-  <tr><th>Category</th><th>What it covers</th><th>Why</th></tr>
+  <tr><th>型別</th><th>具體內容</th><th>為什麼要</th></tr>
   <tr>
-    <td>Account data</td>
-    <td>Email address and encrypted password credentials</td>
-    <td>Signing in and password recovery</td>
+    <td>帳號資訊</td>
+    <td>郵箱地址、加密後的密碼憑據</td>
+    <td>登入、找回密碼</td>
   </tr>
   <tr>
-    <td>Your records</td>
-    <td>Stamps and their timestamps, notes, journals and pages, custom papers and palettes, cover stickers, coin history, avatar</td>
-    <td>So you can continue on a new or second device</td>
+    <td>你的記錄</td>
+    <td>印記及其時間、備註文字、日記與頁面、自定義紙樣與配色、封面貼紙、鷗幣流水、頭像</td>
+    <td>讓你換裝置、多裝置時能接著記</td>
   </tr>
   <tr>
-    <td>Health-related records within them</td>
-    <td>Period, medication, vitamin and exercise stamps, plus the cycle estimates derived from them</td>
-    <td>Same as above. Listed separately so you know they are part of what syncs</td>
+    <td>其中的健康類記錄</td>
+    <td>生理期、吃藥、維生素、運動這些圖章，以及據此算出的週期與預測</td>
+    <td>同上。它們是記錄的一部分，我們在這裡單獨列出，是為了讓你清楚地知道它們也在同步範圍內</td>
   </tr>
 </table>
-<p>This data is stored in a database provided by Supabase with row-level security enabled: <strong>at the database level, an account can only read and write its own row</strong>. That is enforced by the database, not merely promised.</p>
+<p>這些資料存放在 Supabase 提供的資料庫中，並啟用了行級安全策略：<strong>每個帳號在資料庫層面只能讀寫屬於自己的那一行</strong>。這不是一句承諾，是資料庫強制執行的規則。</p>
 
-<h3>1.3 Usage analytics</h3>
-<p>To understand what isn't working, the app records usage and uploads it periodically:</p>
+<h3>3. 使用情況統計</h3>
+<p>為了判斷產品哪裡做得不好，應用會記錄使用行為並定期回傳：</p>
 <ul>
-  <li>Which screens were opened, which stamps were used, what was purchased in the shop, current coin balance</li>
-  <li>A randomly generated anonymous device identifier, app version, OS version, device model, language</li>
-  <li>Once signed in, an account identifier used to recognise that a phone and a tablet belong to the same person. It is salted and hashed before being stored</li>
+  <li>開啟了哪些頁面、使用了哪些圖章、在商店裡買了什麼、當前鷗幣餘額</li>
+  <li>一個隨機生成的匿名裝置編號、應用版本、系統版本、裝置型號、語言</li>
+  <li>登入後附帶一個帳號編號，用於識別"同一個人的手機和平板"。該編號在寫入儲存前會經過加鹽雜湊處理</li>
 </ul>
 <div class="note">
-  <p><strong>None of your writing is included.</strong> Not a single word of your notes, journal titles or page content. Your email address is not included either.</p>
-  <p><strong>Health and fitness stamps are not reported by name.</strong> Placing a "period" or "medication" stamp appears in analytics only as a generic label meaning "a health-category stamp was used". Which stamp it was never leaves your device.</p>
+  <p><strong>這份統計裡沒有你寫的任何文字。</strong>備註、日記名字、頁面內容，一個字都不會進入統計。也不包含你的郵箱地址。</p>
+  <p><strong>健康與運動類的圖章不上報具體名稱。</strong>蓋下「生理期」「吃藥」這類圖章時，統計裡只會出現一個籠統標籤，表示"使用了一枚健康類圖章"，具體是哪一枚不會離開你的裝置。</p>
 </div>
-<p><strong>You can turn this off at any time</strong> in Me → Preferences → Usage analytics. Nothing is collected after that, and anything not yet uploaded is deleted. Turning it off does not affect any feature of the app.</p>
-<p>Analytics logs are retained for <strong>90 days</strong> and then deleted automatically.</p>
+<p><strong>你可以隨時關掉它</strong>：「我的 → 偏好 → 使用情況統計」。關掉之後不再收集，還沒上傳的記錄也會一併刪除。關掉不影響應用的任何功能。</p>
+<p>統計日誌保留 <strong>90 天</strong>，到期自動刪除。</p>
 
-<h2>2. What allows us to process this</h2>
-<p>Different information rests on different grounds. This is here so you can see where you have a choice:</p>
+<h2>二、我們憑什麼處理這些資訊</h2>
+<p>不同的資訊，處理它的依據不一樣。寫在這裡是為了讓你知道自己在哪些地方有選擇權：</p>
 <table>
-  <tr><th>Information</th><th>Ground</th><th>Your choice</th></tr>
-  <tr><td>Account details (email, password credential)</td><td>Performing our agreement with you — accounts and sync are impossible without it</td><td>Don't create an account; the app works fully without one</td></tr>
-  <tr><td>Your records (the synced ones)</td><td>Your consent, given by turning sync on, and performance of our agreement</td><td>Stay signed out and no cloud data exists; sign out or delete your account at any time</td></tr>
-  <tr><td>Health records among them</td><td><strong>Your explicit consent</strong> — see the next section</td><td>Don't use those stamps; or stay signed out and they never leave the device</td></tr>
-  <tr><td>Usage analytics</td><td>Our legitimate interest in improving the app, with an opt-out provided</td><td><strong>Turn it off in Me → Preferences</strong></td></tr>
-  <tr><td>Membership status</td><td>Performing our agreement — it decides whether member features are unlocked</td><td>Don't subscribe. We never touch payment details, see below</td></tr>
+  <tr><th>資訊</th><th>依據</th><th>你的選擇</th></tr>
+  <tr><td>帳號資訊（郵箱、密碼憑據）</td><td>履行與你之間的協議——沒有它就無法提供帳號和同步</td><td>不註冊即可，應用不登入也能完整使用</td></tr>
+  <tr><td>你的記錄（同步部分）</td><td>你主動開啟同步這一行為構成的同意，以及履行協議</td><td>不登入就不產生雲端資料；隨時可退出登入或刪除帳號</td></tr>
+  <tr><td>其中的健康類記錄</td><td><strong>你的明示同意</strong>——見下一節</td><td>可以不記這類圖章；不登入則完全不出裝置</td></tr>
+  <tr><td>使用情況統計</td><td>改進產品的合理利益，並提供了退出方式</td><td><strong>「我的 → 偏好」裡隨時關掉</strong></td></tr>
+  <tr><td>會員訂閱狀態</td><td>履行協議——用來判斷你能不能用會員功能</td><td>不開通即可。支付資訊我們不接觸，見下文</td></tr>
 </table>
-<p>If you are in the EEA or UK, the grounds above map to Article 6 GDPR (health records additionally to Article 9). If you are in Canada, we process on a consent basis under PIPEDA.</p>
+<p>如果你在歐洲經濟區或英國，上表中的「依據」對應 GDPR 第 6 條（健康類記錄另適用第 9 條）；如果你在加拿大，我們按《個人資訊保護和電子檔案法》（PIPEDA）以同意為基礎處理。</p>
 
-<h2>3. Health records</h2>
-<p>Period, medication, vitamin and exercise stamps — and the cycle estimates derived from them — are <strong>health information</strong>. Most jurisdictions treat this as a category needing stronger protection (GDPR calls it "special category data"). So, stated separately:</p>
+<h2>三、健康類記錄</h2>
+<p>生理期、吃藥、維生素、運動這些圖章，以及據此算出的週期與預測，屬於<strong>健康資訊</strong>。多數國家和地區把它歸為需要更高保護的類別（GDPR 稱「特殊類別資料」，PIPL 稱「敏感個人資訊」）。所以單獨說清楚：</p>
 <ul>
-  <li><strong>Without an account it never leaves your device.</strong> That is the strongest protection available, and it is the default.</li>
-  <li>With sync on, they upload like any other record and are covered by the same row-level security. <strong>Turning sync on is how you consent to this processing.</strong> If you'd rather not, don't sign in — or delete your account at any time.</li>
-  <li><strong>Analytics never carries their names.</strong> Placing one of these stamps appears only as a generic "a health-category stamp was used"; which one it was never leaves your device.</li>
-  <li>We don't use them for inference, profiling, recommendations or advertising, and we don't share them with anyone.</li>
+  <li><strong>不登入就完全不出裝置。</strong>這是最強的一種保護，也是我們的預設狀態。</li>
+  <li>開啟同步之後，它們和其它記錄一樣上傳，受同一套行級安全策略保護。<strong>你開啟同步，即視為你同意我們為此目的處理這部分資訊</strong>；不想同步就不要登入，或者隨時刪除帳號。</li>
+  <li><strong>使用情況統計裡不出現它們的具體名稱。</strong>蓋下這類圖章時，統計裡只有一個籠統標籤表示「使用了一枚健康類圖章」，是哪一枚不會離開你的裝置。</li>
+  <li>我們不用它們做任何推斷、畫像、推薦或廣告，也不會分享給任何人。</li>
 </ul>
 
-<h2>4. What we don't do</h2>
+<h2>四、我們不做什麼</h2>
 <ul>
-  <li><strong>No advertising tracking.</strong> Your data is never combined with third-party data to target ads across apps or websites.</li>
-  <li><strong>We don't sell or trade your personal information.</strong></li>
-  <li><strong>We don't use your records to train models, generate recommendations, or for anything unrelated to sync.</strong></li>
-  <li><strong>We never touch your payment details.</strong> Membership subscriptions are billed by the App Store. Payment methods and card numbers stay with Apple — we never see them and never receive them. The app reads exactly one thing from the system: whether this Apple ID currently has an active subscription.</li>
+  <li><strong>不做廣告追蹤。</strong>你的資料不會與任何第三方的資料合併，用於跨應用、跨網站的廣告定向。</li>
+  <li><strong>不出售、不交易你的個人資訊。</strong></li>
+  <li><strong>不將你的記錄用於訓練模型、生成推薦或任何與同步無關的用途。</strong></li>
+  <li><strong>不接觸你的支付資訊。</strong>會員訂閱由 App Store 收款，付款方式和卡號始終在 Apple 手裡，我們看不到也收不到。應用只從系統讀一個結論：這個 Apple ID 現在有沒有有效的訂閱。</li>
 </ul>
 
-<h2>5. Who we share with</h2>
-<p>We don't share your information with anyone other than the service providers below, who process data solely on our instructions:</p>
+<h2>五、我們與誰共享</h2>
+<p>除下列為我們提供基礎服務的供應商外，不向任何第三方共享你的資訊。他們僅按我們的委託處理資料，不得用於自身目的：</p>
 <table>
-  <tr><th>Provider</th><th>What they handle</th></tr>
-  <tr><td>Supabase</td><td>Storage of account and sync data</td></tr>
-  <tr><td>Brevo</td><td>Sending verification and confirmation emails</td></tr>
-  <tr><td>Cloudflare</td><td>Receiving and storing usage analytics</td></tr>
+  <tr><th>供應商</th><th>處理什麼</th></tr>
+  <tr><td>Supabase</td><td>帳號與同步資料的儲存</td></tr>
+  <tr><td>Brevo</td><td>傳送驗證碼與確認郵件</td></tr>
+  <tr><td>Cloudflare</td><td>接收並儲存使用情況統計</td></tr>
 </table>
-<p>We may also disclose information where required by law or where necessary to protect the safety of our users or the public.</p>
+<p><strong>跨境傳輸</strong>：上述供應商的伺服器可能位於加拿大境外（包括美國和歐盟）。當你的資訊離開你所在的國家或地區時，我們透過與供應商簽訂的資料處理協議（對歐洲經濟區使用者，包含歐盟標準合同條款）來提供保護。<strong>無論資料存放在哪裡，本政策對你的承諾都同樣適用。</strong></p>
+<p>另外，在法律要求或為保護使用者與公眾安全所必需的情況下，我們可能依法披露相關資訊。</p>
 
-<h2>6. Where data lives and how long we keep it</h2>
+<h2>六、資料存放在哪裡，保留多久</h2>
 <ul>
-  <li><strong>Account and sync data</strong>: in a Supabase database in ap-northeast-1, for as long as your account exists.</li>
-  <li><strong>After you delete your account</strong>: live data goes immediately; our provider's rolling backups may hold it for up to 30 more days before being overwritten in the normal backup rotation. It is not accessed or used for anything during that window.</li>
-  <li><strong>Usage analytics</strong>: deleted automatically after 90 days. Anything not yet uploaded is deleted the moment you turn analytics off in the app.</li>
-  <li><strong>Local data</strong>: stays on your device until you delete it or uninstall the app. Uninstalling removes the local copy; the cloud copy remains unless you delete your account.</li>
+  <li><strong>帳號與同步資料</strong>：存放在 Supabase 位於 ap-northeast-1 的資料庫中，在你的帳號存續期間一直保留。</li>
+  <li><strong>刪除帳號之後</strong>：線上資料立即刪除；供應商的滾動備份中最長可能再保留 30 天，之後隨備份輪轉一併覆蓋。這段時間裡資料不會被訪問或用於任何用途。</li>
+  <li><strong>使用情況統計</strong>：保留 90 天後自動刪除。你在應用內關掉統計時，還沒上傳的那部分立即刪除。</li>
+  <li><strong>本地資料</strong>：一直在你的裝置上，直到你自己刪除或解除安裝應用。解除安裝會連同本地記錄一起刪掉，雲端那份仍在（除非你刪了帳號）。</li>
 </ul>
 
-<h2>7. Your rights</h2>
+<h2>七、你的權利</h2>
 <ul>
-  <li><strong>Opt out entirely</strong>: use the app without an account; no cloud data is created.</li>
-  <li><strong>Access and export</strong>: Me → Export data packages everything on this device.</li>
-  <li><strong>Correction</strong>: edit or delete any record in the app; the cloud copy updates on the next sync.</li>
-  <li><strong>Delete your account</strong>: Me → Account → Delete account. Both the cloud copy and <strong>the records on this device are permanently deleted</strong>. If you only want to switch accounts, use Sign out instead.</li>
-  <li><strong>Portability</strong>: Export data produces structured, machine-readable files you can keep or move elsewhere.</li>
-  <li><strong>Object and restrict</strong>: you can object to processing based on legitimate interest — mainly usage analytics, which you can switch off right in the app — and ask us to restrict processing while a dispute is resolved.</li>
-  <li><strong>Withdraw consent</strong>: at any time, by turning analytics off, signing out, or deleting your account. Withdrawal doesn't affect the lawfulness of processing already carried out.</li>
-  <li><strong>Other requests</strong>: to ask what we hold about you, or to request correction, deletion or restriction, email us at the address below. We'll respond within 30 days.</li>
+  <li><strong>隨時不參與</strong>：不登入即可完整使用應用的記錄功能，此時不產生任何雲端資料。</li>
+  <li><strong>訪問與匯出</strong>：應用內「我的 → 匯出資料」可將本機全部記錄打包匯出。</li>
+  <li><strong>更正</strong>：你的記錄隨時可以在應用內修改或刪除，同步後雲端隨之更新。</li>
+  <li><strong>刪除帳號</strong>：應用內「我的 → 帳號 → 刪除帳號」。雲端資料和<strong>這臺裝置上的記錄會一起被徹底刪除，不可恢復</strong>。只是想換個帳號的話，用「退出登入」。</li>
+  <li><strong>可攜帶</strong>：「匯出資料」給出的是結構化、機器可讀的檔案，你可以自己儲存或轉移到別處。</li>
+  <li><strong>反對與限制</strong>：你可以反對我們基於合理利益進行的處理（主要是使用情況統計——應用內直接就能關掉），也可以要求我們在爭議解決期間限制處理。</li>
+  <li><strong>撤回同意</strong>：隨時可以撤回，方式包括關掉統計、退出登入、刪除帳號。撤回不影響撤回之前已經進行的處理的合法性。</li>
+  <li><strong>其他請求</strong>：如需瞭解我們持有你的哪些資訊，或提出更正、刪除、限制處理等請求，可透過文末郵箱聯絡我們。我們會在收到後 30 天內答覆。</li>
 </ul>
-<p><strong>If you think we've got it wrong</strong>, tell me first and I'll take it seriously. You also have the right to complain directly: in Canada to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>; in the EEA or UK to your national data protection authority.</p>
+<p><strong>如果你覺得我們沒處理好</strong>，先聯絡我，我會認真對待。你也有權直接投訴：加拿大使用者可向<a href="https://www.priv.gc.ca/">加拿大隱私專員公署（OPC）</a>投訴；歐洲經濟區或英國使用者可向你所在國的資料保護監管機構投訴。</p>
 
-<h2>8. Security</h2>
-<p>Data is encrypted in transit with HTTPS. Access to account data is constrained by database row-level security. Passwords are stored irreversibly by the authentication service; we cannot see your plaintext password. No method of transmission or storage is completely secure.</p>
+<h2>八、安全</h2>
+<p>資料在傳輸過程中使用 HTTPS 加密；帳號資料的訪問由資料庫的行級安全策略限制；密碼由認證服務以不可逆的方式儲存，我們無法看到你的原始密碼。請注意，沒有任何一種傳輸或儲存方式是絕對安全的。</p>
 
-<h2>9. Children</h2>
-<p>Record Everything is not directed at children under 13, and we do not knowingly collect their personal information. If you believe we have, please contact us and we will delete it promptly.</p>
+<h2>九、兒童</h2>
+<p>本應用不面向 13 週歲以下的兒童，我們不會有意收集其個人資訊。如你認為我們無意中收集了此類資訊，請聯絡我們，我們會盡快刪除。</p>
 
-<h2>10. Changes to this policy</h2>
-<p>If this policy changes, we'll update the date at the top of this page. For material changes to what we collect or why, we'll say so prominently in the app.</p>
+<h2>十、政策變更</h2>
+<p>本政策如有修改，我們會更新本頁頂部的日期。若涉及收集範圍或用途的實質性變化，我們會在應用內以顯著方式告知。</p>
 
-<h2>11. Contact</h2>
-<p>The controller of the personal information described in this policy is:</p>
+<h2>十一、聯絡我們</h2>
+<p>本政策所述個人資訊的處理者（GDPR 意義上的「資料控制者」）是：</p>
 <ul>
-  <li><strong>Zimo Wu</strong>, Burnaby, British Columbia, Canada</li>
-  <li>Email: <a href="mailto:zimo_2000@icloud.com">zimo_2000@icloud.com</a></li>
+  <li><strong>Zimo Wu</strong>，本拿比，不列顛哥倫比亞省，加拿大</li>
+  <li>郵箱：<a href="mailto:zimo_2000@icloud.com">zimo_2000@icloud.com</a></li>
 </ul>
-<p>Any question about privacy, or to exercise any of the rights above, just email me. There is no separate data protection officer — this is a one-person app, and the mail comes straight to me.</p>
-
-<footer>戳戳！／ Record Everything</footer>
+<p>有任何關於隱私的問題，或者要行使上面那些權利，發郵件給我就行。我沒有設專職的資料保護官——這是一個人做的應用，郵件直接到我這裡。</p>
 
 </main>
 </body>
