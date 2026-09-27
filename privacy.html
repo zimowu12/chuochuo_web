@@ -45,7 +45,7 @@
 
 <header>
   <h1>Record Everything — Privacy Policy</h1>
-  <p class="meta">Effective: September 5th, 2026 · Last updated: September 9th, 2026</p>
+  <p class="meta">Effective: September 5th, 2026 · Last updated: September 24th, 2026</p>
 </header>
 
 <p class="lede"><strong>Record Everything is a local-first journalling app.</strong> Without an account, nothing you record ever leaves your device. Cloud sync is optional and only starts once you create an account.</p>
@@ -74,6 +74,11 @@
     <td>Period, medication, vitamin and exercise stamps, plus the cycle estimates derived from them</td>
     <td>Same as above. Listed separately so you know they are part of what syncs</td>
   </tr>
+  <tr>
+    <td>Membership status</td>
+    <td>Which plan is active and when the current period ends — never your payment method or card number</td>
+    <td>So your membership follows your account across devices, and between iPhone and Android</td>
+  </tr>
 </table>
 <p>This data is stored in a database provided by Supabase with row-level security enabled: <strong>at the database level, an account can only read and write its own row</strong>. That is enforced by the database, not merely promised.</p>
 
@@ -90,6 +95,16 @@
 </div>
 <p><strong>You can turn this off at any time</strong> in Me → Preferences → Usage analytics. Nothing is collected after that, and anything not yet uploaded is deleted. Turning it off does not affect any feature of the app.</p>
 <p>Analytics logs are retained for <strong>90 days</strong> and then deleted automatically.</p>
+<p>On the Android version distributed through app stores in mainland China, the app asks for your consent to this policy on first launch, and <strong>records no analytics and reads no device information until you agree</strong>.</p>
+
+<h3>1.4 Android permissions</h3>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Internet</td><td>Signing in, cloud sync, uploading usage analytics</td></tr>
+  <tr><td>Network state</td><td>Checking whether you're on a metered connection with Data Saver on — if so, analytics are not uploaded</td></tr>
+  <tr><td>Vibration</td><td>Haptic feedback when stamping and turning pages</td></tr>
+</table>
+<p>The Android app requests no camera, storage, location, contacts, microphone or notification permissions. Choosing an avatar uses the system photo picker, which only hands the app the one picture you select. The app contains no third-party analytics, advertising, push or crash-reporting SDKs.</p>
 
 <h2>2. What allows us to process this</h2>
 <p>Different information rests on different grounds. This is here so you can see where you have a choice:</p>
@@ -117,7 +132,7 @@
   <li><strong>No advertising tracking.</strong> Your data is never combined with third-party data to target ads across apps or websites.</li>
   <li><strong>We don't sell or trade your personal information.</strong></li>
   <li><strong>We don't use your records to train models, generate recommendations, or for anything unrelated to sync.</strong></li>
-  <li><strong>We never touch your payment details.</strong> Membership subscriptions are billed by the App Store. Payment methods and card numbers stay with Apple — we never see them and never receive them. The app reads exactly one thing from the system: whether this Apple ID currently has an active subscription.</li>
+  <li><strong>We never touch your payment details.</strong> Membership subscriptions are billed by the App Store on iPhone and by Google Play on Android. Payment methods and card numbers stay with Apple or Google — we never see them and never receive them. What we do store is the conclusion: which plan is active and when the current period ends, so that your membership follows your account rather than the phone in your hand. That is checked with Apple or Google on our side; the app itself cannot claim to be a member.</li>
 </ul>
 
 <h2>5. Who we share with</h2>
@@ -136,6 +151,7 @@
   <li><strong>After you delete your account</strong>: live data goes immediately; our provider's rolling backups may hold it for up to 30 more days before being overwritten in the normal backup rotation. It is not accessed or used for anything during that window.</li>
   <li><strong>Usage analytics</strong>: deleted automatically after 90 days. Anything not yet uploaded is deleted the moment you turn analytics off in the app.</li>
   <li><strong>Local data</strong>: stays on your device until you delete it or uninstall the app. Uninstalling removes the local copy; the cloud copy remains unless you delete your account.</li>
+  <li><strong>Android system backup</strong>: if Android's device backup is turned on, the system may include the app's local records in the backup it keeps in your Google account. That is controlled by your Android settings, not by us; your sign-in session is excluded from it.</li>
 </ul>
 
 <h2>7. Your rights</h2>
@@ -143,7 +159,7 @@
   <li><strong>Opt out entirely</strong>: use the app without an account; no cloud data is created.</li>
   <li><strong>Access and export</strong>: Me → Export data packages everything on this device.</li>
   <li><strong>Correction</strong>: edit or delete any record in the app; the cloud copy updates on the next sync.</li>
-  <li><strong>Delete your account</strong>: Me → Account → Delete account. Both the cloud copy and <strong>the records on this device are permanently deleted</strong>. If you only want to switch accounts, use Sign out instead.</li>
+  <li id="delete-account"><strong>Delete your account</strong>: Me → Account → Delete account (same on iPhone and Android). If you no longer have the app installed, email the address below from your account's email and we'll delete it for you. Both the cloud copy and <strong>the records on this device are permanently deleted</strong>. If you only want to switch accounts, use Sign out instead.</li>
   <li><strong>Portability</strong>: Export data produces structured, machine-readable files you can keep or move elsewhere.</li>
   <li><strong>Object and restrict</strong>: you can object to processing based on legitimate interest — mainly usage analytics, which you can switch off right in the app — and ask us to restrict processing while a dispute is resolved.</li>
   <li><strong>Withdraw consent</strong>: at any time, by turning analytics off, signing out, or deleting your account. Withdrawal doesn't affect the lawfulness of processing already carried out.</li>
@@ -174,7 +190,7 @@
 
 <header>
   <h1>戳戳！隐私政策</h1>
-  <p class="meta">生效日期：2026年9月5日 · 最近更新：2026年9月9日</p>
+  <p class="meta">生效日期：2026年9月5日 · 最近更新：2026年9月24日</p>
 </header>
 
 <p class="lede"><strong>戳戳！是一个本地优先的记录应用。</strong>不登录账号的话，你记的任何东西都不会离开这台设备。云端同步是可选的，只有你自己开了账号才会启用。</p>
@@ -203,6 +219,11 @@
     <td>生理期、吃药、维生素、运动这些图章，以及据此算出的周期与预测</td>
     <td>同上。它们是记录的一部分，我们在这里单独列出，是为了让你清楚地知道它们也在同步范围内</td>
   </tr>
+  <tr>
+    <td>会员状态</td>
+    <td>现在生效的是哪一档、这一期什么时候到期——不包含付款方式和卡号</td>
+    <td>让会员跟着账号走：换设备、以及 iPhone 和安卓之间都认同一份</td>
+  </tr>
 </table>
 <p>这些数据存放在 Supabase 提供的数据库中，并启用了行级安全策略：<strong>每个账号在数据库层面只能读写属于自己的那一行</strong>。这不是一句承诺，是数据库强制执行的规则。</p>
 
@@ -219,6 +240,16 @@
 </div>
 <p><strong>你可以随时关掉它</strong>：「我的 → 偏好 → 使用情况统计」。关掉之后不再收集，还没上传的记录也会一并删除。关掉不影响应用的任何功能。</p>
 <p>统计日志保留 <strong>90 天</strong>，到期自动删除。</p>
+<p>在中国大陆应用商店分发的安卓版本，首次启动时会先请你阅读并同意本政策；<strong>你同意之前，应用不记录任何使用情况，也不读取任何设备信息</strong>。</p>
+
+<h3>4. 安卓版申请的权限</h3>
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr><td>网络访问</td><td>登录、云端同步、上传使用情况统计</td></tr>
+  <tr><td>网络状态</td><td>判断当前是否为按流量计费的网络、是否开启了省流量模式——开启时不上传统计</td></tr>
+  <tr><td>振动</td><td>盖章、翻页时的触感反馈</td></tr>
+</table>
+<p>安卓版不申请相机、存储、位置、通讯录、麦克风、通知等权限。设置头像使用系统照片选择器，应用只拿到你选中的那一张图片。应用内没有接入任何第三方统计、广告、推送或崩溃上报 SDK。</p>
 
 <h2>二、我们凭什么处理这些信息</h2>
 <p>不同的信息，处理它的依据不一样。写在这里是为了让你知道自己在哪些地方有选择权：</p>
@@ -246,7 +277,7 @@
   <li><strong>不做广告追踪。</strong>你的数据不会与任何第三方的数据合并，用于跨应用、跨网站的广告定向。</li>
   <li><strong>不出售、不交易你的个人信息。</strong></li>
   <li><strong>不将你的记录用于训练模型、生成推荐或任何与同步无关的用途。</strong></li>
-  <li><strong>不接触你的支付信息。</strong>会员订阅由 App Store 收款，付款方式和卡号始终在 Apple 手里，我们看不到也收不到。应用只从系统读一个结论：这个 Apple ID 现在有没有有效的订阅。</li>
+  <li><strong>不接触你的支付信息。</strong>会员订阅在 iPhone 上由 App Store 收款，在安卓上由 Google Play 收款，付款方式和卡号始终在 Apple 或 Google 手里，我们看不到也收不到。我们存的只是一个结论：现在生效的是哪一档、这一期什么时候到期——这样会员才能跟着账号走，而不是跟着某一台手机。这个结论由我们的服务器向 Apple 或 Google 核实后写入，应用自己说了不算。</li>
 </ul>
 
 <h2>五、我们与谁共享</h2>
@@ -266,6 +297,7 @@
   <li><strong>删除账号之后</strong>：线上数据立即删除；供应商的滚动备份中最长可能再保留 30 天，之后随备份轮转一并覆盖。这段时间里数据不会被访问或用于任何用途。</li>
   <li><strong>使用情况统计</strong>：保留 90 天后自动删除。你在应用内关掉统计时，还没上传的那部分立即删除。</li>
   <li><strong>本地数据</strong>：一直在你的设备上，直到你自己删除或卸载应用。卸载会连同本地记录一起删掉，云端那份仍在（除非你删了账号）。</li>
+  <li><strong>安卓系统备份</strong>：如果你在安卓设置里开启了设备备份，系统可能会把应用的本地记录一并备份到你的 Google 账号。这由你的系统设置决定，不由我们控制；登录凭据不在备份范围内。</li>
 </ul>
 
 <h2>七、你的权利</h2>
@@ -273,7 +305,7 @@
   <li><strong>随时不参与</strong>：不登录即可完整使用应用的记录功能，此时不产生任何云端数据。</li>
   <li><strong>访问与导出</strong>：应用内「我的 → 导出数据」可将本机全部记录打包导出。</li>
   <li><strong>更正</strong>：你的记录随时可以在应用内修改或删除，同步后云端随之更新。</li>
-  <li><strong>删除账号</strong>：应用内「我的 → 账号 → 删除账号」。云端数据和<strong>这台设备上的记录会一起被彻底删除，不可恢复</strong>。只是想换个账号的话，用「退出登录」。</li>
+  <li id="delete-account-zh-hans"><strong>删除账号</strong>：应用内「我的 → 账号 → 删除账号」（iPhone 和安卓相同）。如果已经没有安装应用，用注册账号的邮箱给文末地址发邮件，我们会替你删除。云端数据和<strong>这台设备上的记录会一起被彻底删除，不可恢复</strong>。只是想换个账号的话，用「退出登录」。</li>
   <li><strong>可携带</strong>：「导出数据」给出的是结构化、机器可读的文件，你可以自己保存或转移到别处。</li>
   <li><strong>反对与限制</strong>：你可以反对我们基于合理利益进行的处理（主要是使用情况统计——应用内直接就能关掉），也可以要求我们在争议解决期间限制处理。</li>
   <li><strong>撤回同意</strong>：随时可以撤回，方式包括关掉统计、退出登录、删除账号。撤回不影响撤回之前已经进行的处理的合法性。</li>
@@ -302,7 +334,7 @@
 
 <header>
   <h1>戳戳！隱私權政策</h1>
-  <p class="meta">生效日期：2026年9月5日 · 最近更新：2026年9月9日</p>
+  <p class="meta">生效日期：2026年9月5日 · 最近更新：2026年9月24日</p>
 </header>
 
 <p class="lede"><strong>戳戳！是一個本地優先的記錄應用。</strong>不登入帳號的話，你記的任何東西都不會離開這臺裝置。雲端同步是可選的，只有你自己開了帳號才會啟用。</p>
@@ -331,6 +363,11 @@
     <td>生理期、吃藥、維生素、運動這些圖章，以及據此算出的週期與預測</td>
     <td>同上。它們是記錄的一部分，我們在這裡單獨列出，是為了讓你清楚地知道它們也在同步範圍內</td>
   </tr>
+  <tr>
+    <td>會員狀態</td>
+    <td>現在生效的是哪一檔、這一期什麼時候到期——不包含付款方式和卡號</td>
+    <td>讓會員跟著帳號走：換裝置、以及 iPhone 和安卓之間都認同一份</td>
+  </tr>
 </table>
 <p>這些資料存放在 Supabase 提供的資料庫中，並啟用了行級安全策略：<strong>每個帳號在資料庫層面只能讀寫屬於自己的那一行</strong>。這不是一句承諾，是資料庫強制執行的規則。</p>
 
@@ -347,6 +384,16 @@
 </div>
 <p><strong>你可以隨時關掉它</strong>：「我的 → 偏好 → 使用情況統計」。關掉之後不再收集，還沒上傳的記錄也會一併刪除。關掉不影響應用的任何功能。</p>
 <p>統計日誌保留 <strong>90 天</strong>，到期自動刪除。</p>
+<p>在中國大陸應用商店發佈的安卓版本，首次啟動時會先請你閱讀並同意本政策；<strong>你同意之前，應用不記錄任何使用情況，也不讀取任何裝置資訊</strong>。</p>
+
+<h3>4. 安卓版申請的權限</h3>
+<table>
+  <tr><th>權限</th><th>用途</th></tr>
+  <tr><td>網路存取</td><td>登入、雲端同步、上傳使用情況統計</td></tr>
+  <tr><td>網路狀態</td><td>判斷目前是否為計量付費的網路、是否開啟了數據節省模式——開啟時不上傳統計</td></tr>
+  <tr><td>震動</td><td>蓋章、翻頁時的觸感回饋</td></tr>
+</table>
+<p>安卓版不申請相機、儲存空間、位置、通訊錄、麥克風、通知等權限。設定頭像使用系統相片挑選器，應用只拿到你選中的那一張圖片。應用內沒有接入任何第三方統計、廣告、推播或當機回報 SDK。</p>
 
 <h2>二、我們憑什麼處理這些資訊</h2>
 <p>不同的資訊，處理它的依據不一樣。寫在這裡是為了讓你知道自己在哪些地方有選擇權：</p>
@@ -374,7 +421,7 @@
   <li><strong>不做廣告追蹤。</strong>你的資料不會與任何第三方的資料合併，用於跨應用、跨網站的廣告定向。</li>
   <li><strong>不出售、不交易你的個人資訊。</strong></li>
   <li><strong>不將你的記錄用於訓練模型、生成推薦或任何與同步無關的用途。</strong></li>
-  <li><strong>不接觸你的支付資訊。</strong>會員訂閱由 App Store 收款，付款方式和卡號始終在 Apple 手裡，我們看不到也收不到。應用只從系統讀一個結論：這個 Apple ID 現在有沒有有效的訂閱。</li>
+  <li><strong>不接觸你的支付資訊。</strong>會員訂閱在 iPhone 上由 App Store 收款，在安卓上由 Google Play 收款，付款方式和卡號始終在 Apple 或 Google 手裡，我們看不到也收不到。我們存的只是一個結論：現在生效的是哪一檔、這一期什麼時候到期——這樣會員才能跟著帳號走，而不是跟著某一台手機。這個結論由我們的伺服器向 Apple 或 Google 核實後寫入，應用自己說了不算。</li>
 </ul>
 
 <h2>五、我們與誰共享</h2>
@@ -394,6 +441,7 @@
   <li><strong>刪除帳號之後</strong>：線上資料立即刪除；供應商的滾動備份中最長可能再保留 30 天，之後隨備份輪轉一併覆蓋。這段時間裡資料不會被訪問或用於任何用途。</li>
   <li><strong>使用情況統計</strong>：保留 90 天後自動刪除。你在應用內關掉統計時，還沒上傳的那部分立即刪除。</li>
   <li><strong>本地資料</strong>：一直在你的裝置上，直到你自己刪除或解除安裝應用。解除安裝會連同本地記錄一起刪掉，雲端那份仍在（除非你刪了帳號）。</li>
+  <li><strong>安卓系統備份</strong>：如果你在安卓設定裡開啟了裝置備份，系統可能會把應用的本地記錄一併備份到你的 Google 帳號。這由你的系統設定決定，不由我們控制；登入憑據不在備份範圍內。</li>
 </ul>
 
 <h2>七、你的權利</h2>
@@ -401,7 +449,7 @@
   <li><strong>隨時不參與</strong>：不登入即可完整使用應用的記錄功能，此時不產生任何雲端資料。</li>
   <li><strong>訪問與匯出</strong>：應用內「我的 → 匯出資料」可將本機全部記錄打包匯出。</li>
   <li><strong>更正</strong>：你的記錄隨時可以在應用內修改或刪除，同步後雲端隨之更新。</li>
-  <li><strong>刪除帳號</strong>：應用內「我的 → 帳號 → 刪除帳號」。雲端資料和<strong>這臺裝置上的記錄會一起被徹底刪除，不可恢復</strong>。只是想換個帳號的話，用「退出登入」。</li>
+  <li id="delete-account-zh-hant"><strong>刪除帳號</strong>：應用內「我的 → 帳號 → 刪除帳號」（iPhone 和安卓相同）。如果已經沒有安裝應用，用註冊帳號的郵箱寄信到文末地址，我們會替你刪除。雲端資料和<strong>這臺裝置上的記錄會一起被徹底刪除，不可恢復</strong>。只是想換個帳號的話，用「退出登入」。</li>
   <li><strong>可攜帶</strong>：「匯出資料」給出的是結構化、機器可讀的檔案，你可以自己儲存或轉移到別處。</li>
   <li><strong>反對與限制</strong>：你可以反對我們基於合理利益進行的處理（主要是使用情況統計——應用內直接就能關掉），也可以要求我們在爭議解決期間限制處理。</li>
   <li><strong>撤回同意</strong>：隨時可以撤回，方式包括關掉統計、退出登入、刪除帳號。撤回不影響撤回之前已經進行的處理的合法性。</li>
